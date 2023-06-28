@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('domain');
             $table->string('database');
-            $table->timestamps();
             $table->unique(['name','domain','database']);
+            $table->timestamps();
         });
     }
 
